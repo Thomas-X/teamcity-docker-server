@@ -3,5 +3,5 @@
 #tar zxf teamcity.tar.gz -C dist/
 #rm -rf teamcity.tar.gz
 docker rm teamcitypi --force
-docker image build -t teamcitypi .
+docker image build -t teamcitypi ./Dockerfile
 docker container run --name teamcitypi -it teamcitypi:latest
